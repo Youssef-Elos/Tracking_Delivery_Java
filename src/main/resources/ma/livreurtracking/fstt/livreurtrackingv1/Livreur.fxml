@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.livreurtracking.fstt.livreurtrackingv1.LivreurController">
+   <children>
+      <AnchorPane fx:id="ap" prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="8.0" layoutY="10.0" prefHeight="472.0" prefWidth="742.0">
+               <children>
+                  <TextField fx:id="nameTextField" layoutX="132.0" layoutY="41.0" prefWidth="180.0" />
+                  <TableView fx:id="userTable" layoutX="11.0" layoutY="222.0" onMouseClicked="#userOnclick" prefHeight="236.0" prefWidth="701.0">
+                     <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="192.0" text="Nom" />
+                        <TableColumn fx:id="phoneColumn" prefWidth="195.0" text="Téléphone" />
+                        <TableColumn fx:id="addressColumn" prefWidth="312.0" text="Adresse" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="24.0" layoutY="44.0" text="Nom du Livreur" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="123.0" text="Mot de Passe" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="44.0" text="Téléphone" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressTextField" layoutX="403.0" layoutY="87.0" prefHeight="70.0" prefWidth="288.0" />
+                  <Button fx:id="addButton" layoutX="16.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleAddButton" prefWidth="180.0" style="-fx-background-color: #00a082;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="deleteButton" layoutX="210.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefWidth="180.0" style="-fx-background-color: #d11a2a;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="updateButton" layoutX="403.0" layoutY="183.0" mnemonicParsing="false" onAction="#haandleUpdateButton" prefWidth="180.0" style="-fx-background-color: #ffc244;" text="Editer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <TextField fx:id="phoneTextField" layoutX="403.0" layoutY="41.0" prefHeight="25.0" prefWidth="288.0" />
+                  <Button layoutX="591.0" layoutY="184.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="53.0" text="refresh" />
+                  <Button layoutX="651.0" layoutY="184.0" mnemonicParsing="false" onAction="#clearFields" prefWidth="53.0" text="Clear" />
+                  <Label layoutX="335.0" layoutY="114.0" prefHeight="19.0" prefWidth="53.0" text="Adresse" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <PasswordField fx:id="passwordField" layoutX="132.0" layoutY="120.0" prefHeight="25.0" prefWidth="180.0" />
+               </children></Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.livreurtracking.fstt.livreurtrackingv1.OrderController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="24.0" prefHeight="353.0" prefWidth="564.0" />
+
+           <Pane layoutX="26.0" layoutY="15.0" prefHeight="425.0" prefWidth="749.0">
+               <Button layoutX="147.0" layoutY="170.0" mnemonicParsing="false" prefWidth="180.0" style="-fx-background-color: #00a082;" text="Refresh" textFill="WHITE">
+                   <font>
+                       <Font name="System Bold" size="13.0" />
+                   </font>
+               </Button>
+               <Button layoutX="427.0" layoutY="170.0" mnemonicParsing="false" prefWidth="180.0" style="-fx-background-color: #d11a2a;" text="Supprimer" textFill="WHITE">
+                   <font>
+                       <Font name="System Bold" size="13.0" />
+                   </font>
+               </Button>
+               <Label layoutX="22.0" layoutY="14.0" text="Status" textFill="#00a082">
+                   <font>
+                       <Font name="System Bold" size="13.0" />
+                   </font>
+               </Label>
+               <Label layoutX="21.0" layoutY="60.0" text="Livreur" textFill="#00a082">
+                   <font>
+                       <Font name="System Bold" size="13.0" />
+                   </font>
+               </Label>
+               <ChoiceBox layoutX="87.0" layoutY="10.0" prefWidth="150.0" />
+               <ChoiceBox layoutX="87.0" layoutY="56.0" prefWidth="150.0" />
+               <TableView fx:id="orderTable" layoutX="21.0" layoutY="213.0" prefHeight="200.0" prefWidth="706.0">
+                   <columns>
+                       <TableColumn fx:id="idColumn" prefWidth="58.0" text="id_comand" />
+                       <TableColumn fx:id="statusColumn" prefWidth="86.0" text="status" />
+                       <TableColumn fx:id="addressColumn" prefWidth="204.0" text="adress " />
+                       <TableColumn fx:id="livreurColumn" prefWidth="96.0" text="Livreur" />
+                       <TableColumn fx:id="distanceColumn" prefWidth="85.0" text="Distance" />
+                       <TableColumn fx:id="dateColumn" prefWidth="181.0" text="Date debut" />
+                   </columns>
+               </TableView>
+         <Button fx:id="initialize" layoutX="656.0" layoutY="171.0" mnemonicParsing="false" onAction="#initialize" text="Refresh" />
+           </Pane>
+
+   </children>
+</AnchorPane>

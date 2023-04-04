@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.livreurtracking.fstt.livreurtrackingv1.MainController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="228.0" style="-fx-background-color: #ffc244;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="36.0" layoutY="181.0" text="FoodDelivery" textFill="#00a082">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Circle fill="#1f93ff00" layoutX="121.0" layoutY="200.0" radius="100.0" strokeType="INSIDE" strokeWidth="5.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.6274510025978088" blue="0.5098039507865906" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.7607843279838562" blue="0.2666666805744171" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="119.0" layoutY="51.0" style="-fx-alignment: center;" text="Log in to FoodDelivery" textFill="#00a082">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="128.0" layoutY="135.0" style="-fx-alignment: center;" text="Nom d'Utilisateur" textFill="#00a082">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="128.0" layoutY="218.0" style="-fx-alignment: center;" text="Mot de Passe" textFill="#00a082">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="128.0" layoutY="176.0" prefHeight="25.0" prefWidth="200.0" style="-fx-alignment: center;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" layoutX="128.0" layoutY="254.0" prefHeight="25.0" prefWidth="200.0" style="-fx-alignment: center;">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Button layoutX="128.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="18.0" prefWidth="200.0" style="-fx-background-color: #00a082;" styleClass="back" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="128.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #00a082;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" layoutX="131.0" layoutY="103.0" prefHeight="17.0" prefWidth="189.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

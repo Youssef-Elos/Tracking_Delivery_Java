@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.livreurtracking.fstt.livreurtrackingv1.AdashboardController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #ffc244;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="9.0" layoutY="187.0" mnemonicParsing="false" onAction="#page2" prefWidth="183.0" style="-fx-alignment: center; -fx-background-color: #00a082;" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="231.0" mnemonicParsing="false" onAction="#page3" prefWidth="183.0" style="-fx-alignment: center; -fx-background-color: #00a082;" text="Livreurs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutbutton" layoutX="9.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToDashboard" prefWidth="183.0" style="-fx-alignment: center; -fx-background-color: #00a082;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="141.0" mnemonicParsing="false" onAction="#page1" prefHeight="25.0" prefWidth="183.0" style="-fx-alignment: center; -fx-background-color: #00a082;" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="76.0" fitWidth="79.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../account-icon.png" />
+               </image></ImageView>
+            <Label layoutX="54.0" layoutY="99.0" text="Administrateur" textFill="#00a082">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    </left>
+    <center>
+
+    </center>
+</BorderPane>
